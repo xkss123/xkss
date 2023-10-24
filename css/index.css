@@ -1,0 +1,198 @@
+a {
+  cursor: url(../image/shubiao.png), auto !important;
+}
+html {
+  font-size: 50px;
+  cursor: url(../image/shubiao.png), auto !important;
+}
+body {
+  min-width: 768px;
+  background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(../image/psc.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 6.4rem;
+  height: 8rem;
+  margin: 3rem auto;
+  background-color: #fff;
+  border-radius: 2%;
+  transition: all 0.3s;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0.2rem rgba(0, 0, 0, 0.4);
+}
+.box .headPhoto {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url("../image/logo.png") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: all 0.3s;
+  position: relative;
+  top: -15%;
+}
+.box:hover .headPhoto {
+  box-shadow: 0px 0px 0.2rem rgba(0, 0, 0, 0.4);
+  transform: rotate(360deg);
+}
+.box:hover img {
+  transform: rotate(360deg);
+}
+.box .pb {
+  font-size: 0.6rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin-top: -1rem;
+}
+.box .fg {
+  width: 80%;
+  height: 0.05rem;
+  background-image: linear-gradient(to left, #3498db, #2980b9);
+}
+.box p {
+  font-size: 0.4rem;
+  margin: 0.2rem 0;
+}
+.box p img {
+  width: 0.4rem;
+  height: 0.4rem;
+  vertical-align: middle;
+  transition: all 0.3s;
+}
+.box .bottom {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+}
+.box .bottom div {
+  font-size: 0.4rem;
+  height: 1rem;
+  line-height: 1rem;
+  width: 50%;
+  text-align: center;
+  transition: all 0.3s;
+}
+.box .bottom div a:hover {
+  color: #0084ff;
+  transform: scale(1.2);
+}
+.right {
+  width: 13rem;
+  height: 9rem;
+}
+.right .cmd {
+  width: 12rem;
+  height: 8rem;
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  border-radius: 0.2rem 0.2rem 0.1rem 0.1rem;
+  transition: all 0.3s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.right .cmd:hover {
+  width: 12.2rem;
+  height: 8.2rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.4);
+  margin: -0.1rem 0 0 -0.1rem;
+  z-index: 1;
+}
+.right .cmd .radius {
+  margin-left: 0.2rem;
+}
+.right .cmd .radius div {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  float: left;
+  margin: 0.16rem 0px 0px 0.2rem;
+}
+.right .cmd .radius .red {
+  background-color: #ff1b22;
+}
+.right .cmd .radius .yellow {
+  background-color: #ffaf00;
+}
+.right .cmd .radius .green {
+  background-color: #00931a;
+}
+.right .cmd .title {
+  width: 100%;
+  height: 0.5rem;
+  text-align: center;
+  background-image: linear-gradient(to top, #b8b8b8, white);
+  border-radius: 0.2rem 0.2rem 0px 0px;
+}
+.right .cmd .title span {
+  position: absolute;
+  margin-left: -1rem;
+  font-size: 0.4rem;
+  color: #58595c;
+}
+.right .cmd .cmdtext {
+  width: 100%;
+  height: 7.7rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0px 0px 0.2rem 0.2rem;
+  position: absolute;
+}
+.right .cmd .cmdtext p {
+  font-size: 0.38rem;
+  margin: 0.2rem 0.2rem;
+}
+.right .cmd .cmdtext img {
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 0.94rem;
+  top: 0.74rem;
+}
+.right .cmd .cmdtext span {
+  color: #00c700;
+}
+.right .cmd .cmdtext #dt {
+  color: #fff;
+  background-color: #00931a;
+  border-radius: 0.04rem;
+}
+.right .cmd2 {
+  right: 1rem;
+  top: 4rem;
+  border-radius: 10px 10px 5px 5px;
+}
+@media screen and (max-width: 1250px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right .cmd {
+    width: 600px;
+    height: 500px;
+    position: static;
+    display: block;
+    margin: 80px 0;
+  }
+  .right .cmd .cmdtext {
+    width: 600px;
+    height: 500px;
+  }
+  .right .cmd:hover {
+    width: 600px;
+    height: 500px;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+    margin: 80px 0;
+    z-index: 1;
+  }
+}
