@@ -213,18 +213,14 @@ body {
   }
   .right .cmd {
     width: 80%;
-    /* 修改为100% */
     height: 300px;
-    /* 修改为auto */
     position: static;
     display: block;
     margin: 200px 0;
   }
   .right .cmd .cmdtext {
     width: 80%;
-    /* 修改为100% */
     height: 300px;
-    /* 修改为auto */
   }
   .right .cmd:hover {
     width: 80%;
